@@ -1,0 +1,817 @@
+/*standard*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap%22");
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'raleway', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+p{
+    font-size: 19px;
+}
+
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 21px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.grey {
+    color: #D9D9D969;
+}
+
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 50px ;
+}
+
+.logo{
+   margin-left: 20px ;
+   padding-top: 40px; 
+}
+
+.img_logo{
+    width: 50%;
+}
+
+.menu_header{
+    display: flex;
+    min-width: 30%;
+}
+
+.choix_header{
+    width: 50%;
+    text-align: center;
+    padding-top: 40px;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+}
+
+.texte_choix{
+    color: inherit;
+}
+
+.choix_header:hover{
+    color: #0065Fc;
+    border-top: 2px solid #0065FC;
+}
+/*fin header*/
+
+
+/*Main*/
+/*section recherche*/
+#conteneur_intro_bdrecherche{
+    margin:55px;
+}
+
+#barre_de_recherche{
+    display: flex;
+    margin-top: 15px;
+}
+
+
+#marqueur{
+    width: 50px;
+    height: 50px;
+    background-color: #D9D9D969;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px ;
+}
+
+#pointeur{
+    padding: 32%;
+}
+
+#texte_recherche{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#texte_soustitre{
+    font-size: 19px;
+    line-height: 20px;
+}
+
+#barre{
+    font-size: 21px;
+    font-weight: bold;
+    padding: 16px;
+    width: 256px;
+    background: white;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+}
+
+#bouton{
+    background: #0065FC;
+    color: #FFFFFF;
+    height: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 49px;
+    text-align: center;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+#bouton_loupe{
+    background: #0065FC;
+    color: #FFFFFF;
+    width: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 49px;
+    text-align: center;
+    border: 1px solid #0065FC;
+    border-radius: 0 15px 15px 0;
+    visibility: hidden;
+}
+/*fin section recherche*/
+
+
+/*section_filtre*/
+#tableau_filtre{
+    margin: 55px;
+    margin-top: -25px;
+    display: flex;
+    font-size: 21px;
+    font-weight: bold;
+    align-items: center; 
+}
+
+.filtrage{
+    display: flex;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 50px;
+    margin-left: 50px; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.filtrage:hover{
+    background-color: #DEEBFF;
+}
+
+#info{
+    font-weight: bold;
+    color:#0065FC;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+}
+
+
+#information{
+    display: flex;
+    margin-top: -25px;
+    margin-left: 55px;
+    margin-bottom: 39px;
+}
+
+#texte_info{
+    font-size: 19px;
+    margin-left: 21px;
+    margin-top: 0px;
+}
+
+.picto{
+    color:#0065FC;
+    margin: 10px;
+}
+
+/*fin section filtre*/
+
+
+/*Partie Hotel*/
+.section_hotel{
+    margin: 30px 55px 0px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*section Hebergement*/
+#conteneur_hebergement{
+    float: left;
+}
+
+.housing{
+    background-color: #D9D9D969;
+    border-radius: 20px;
+    border : 0px;
+    padding: 30px;
+    margin-right: 20px;
+    width: 65%;
+}
+
+.titre_hebergement{
+    margin-left: 4%;
+}
+
+.housing_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width:100%;
+}
+
+.card a{
+    display: flex;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition:0.3s;
+    text-decoration: none;
+}
+
+.card a:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+.section_hotel .housing .housing_cards .card a {
+    flex-direction: column;
+    width: 300px;
+    height: 210px;
+}
+
+.card .card_image .img{
+    height: 100%;
+    width: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.img_hebergement{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.texte_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+.nom_hotel_hebergement{
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.prix_hotel{
+    color: black;
+    font-size: 15px;
+}
+
+.etoiles{
+    color:#0065FC;
+    margin-top: 3%;
+}
+
+.pied_carte{
+    margin-left: 4%;
+    margin-bottom: 3px;
+    line-height: 10px;
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*fin section Hebergement*/
+
+
+/*section Populaire*/
+.conteneur_populaire{
+    background-color: #D9D9D969;
+    border-radius: 20px;
+    border : 0px;
+    padding: 30px;
+}
+
+.entete_populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_populaire{
+    width: 135px;
+    height: 142px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.titre_populaire{
+    font-size: 26px;
+}
+
+#card2{
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+#card2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+#card3{
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+#card3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+#card4{
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+#card4:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+.nom_hotel_populaire{
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.text_card_populaire{
+    padding: 20px 20px 10px 20px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteneur_carte_populaire{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+/*fin section Populaire*/
+/*fin partie Hotel*/
+
+
+/*section activité*/
+.titre_activite{
+    font-size: 30.02px;
+    margin-left: 4%;
+    margin-top: 3%;
+    line-height: 60px;
+}
+
+#conteneur_activite{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: space-between;
+}
+
+.card_act{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.card_act:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+.img_activite{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.nom_act{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+/*fin section activité*/
+/*fin Main*/
+
+
+/*Footer*/
+#footer{
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 45px;
+    background-color: #D9D9D969;
+    border: 1px solid #D9D9D969;
+}
+
+#conteneur_footer{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 25%;
+}
+
+.head_footer{
+    font-size: 21px;
+    margin-top: 45px;
+}
+
+.text_footer1{
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.text_footer2{
+    font-size: 19px;
+    margin-top: 12px;
+}
+/*fin Footer*/
+
+
+/*Affichage Tablette*/
+
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    /*main*/
+
+    /*section filtrage*/
+    .filtrage{
+        font-size: 80%;
+    }
+
+    /*partie hotel*/
+    .section_hotel{
+        flex-direction: column;
+    }
+
+
+    /*section hébergement*/
+    .section_hotel .housing .housing_cards .card a {
+        width: 230px;
+    }
+
+    .housing{
+        width: inherit;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .housing_card_populaire{
+        display: flex;
+    }
+    
+    .prix_hotel{
+        line-height: 15px;
+    }
+    /*fin section hebergement*/
+
+
+    /*section populaire*/
+    .img_populaire{
+        width: 75px;
+    }
+
+    .texte_card_populaire {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #card2{
+        margin-top: 0px;
+    }
+
+    #card3{
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #card4{
+        margin-top: 0px;
+    }
+    /*fin section populaire*/
+    /*fin partie hotel*/
+
+
+    /*section activite*/
+    .img_activite{
+        height: 250px;
+    }
+
+    .nom_act{
+        font-size: 60%;
+    }
+    /*fin section activite*/
+    /*fin main*/
+
+
+    /*footer*/
+    #conteneur_footer{
+        padding-right: 15px;
+        padding-left: 0%;
+    }
+    /*fin footer*/
+}
+
+/*Affichage Mobile*/
+
+@media only screen and (max-width: 768px){
+    /*header*/
+    .header{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin: 0;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_logo{
+        width: 10%;
+    }
+
+    .choix_header{
+        padding-bottom: 20px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .choix_header:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    /*fin header*/
+
+
+    /*main*/
+    /*section recherche*/
+    #bouton{
+        display: none;
+    }
+
+    #pointeur{
+        padding: 15px 10px 0 10px;
+    }
+
+    #bouton_loupe{
+        visibility: visible;
+        padding: 0 10px 0 10px;
+    }
+
+    #texte_recherche{
+        line-height: 1.5em;
+        margin-top: 32px;
+    }
+
+    #texte_soustitre{
+        font-size: 19px;
+        margin-top: -10px;
+    }
+
+    #barre{
+        width: 240px;
+    }
+
+    #barre_de_recherche{
+        margin: 35px 0 0 12px;
+        justify-content: center;
+        width: 90%;
+    }
+    /*fin section recherche*/
+
+
+    /*section filtre*/
+    .filtrage{
+        max-width: 38%;
+        margin-bottom: 17px;
+        text-align: center;
+        font-size: 75%;
+    }
+
+    #tableau_filtre{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .fa-person::before{
+        margin-left: -35px;
+    }
+
+    #tableau_filtre>*{
+        flex: 500px;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #information{
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    /*fin section filtre*/
+
+
+    /*Partie Hotel*/
+    .section_hotel{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+
+    /*section populaire*/
+    
+    .housing_card_populaire
+    {
+        display: initial;
+    }
+    #card3
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #card4
+    {
+        margin-top: 0px;
+    }
+
+    .conteneur_populaire{
+        border-radius: 0 0 0 0;
+        margin-top: -20px;
+    }
+
+    .img_populaire{
+        width: 180px;
+    }
+
+    .nom_hotel_populaire{
+        font-size: 95%;
+    }
+
+    .prix_hotel{
+        font-size:83%;
+    }
+
+    .etoiles{
+        font-size: 67%;
+    }
+    /*fin section populaire*/
+
+
+    /*section hebergement*/
+    #conteneur_hebergement{
+        width: 100%;
+    }
+
+    .housing{
+        background-color: #FFFFFF;
+        border : 0px;
+        max-height: 1433px;
+    }
+    
+    .card a{
+        width: 335px;
+        height: 199px;
+        margin-bottom: 12px;
+    }
+    
+    .img_hebergement{
+        width: 100%;
+        height: 144px;
+    }
+
+    .section_hotel .housing .housing_cards .card a
+    {
+        width: 100%;
+        height: 240px;
+    }
+    
+    .housing_cards
+    {
+        flex-direction: column;
+    }
+
+
+    .pied_carte{
+        visibility: hidden;
+    }
+    /*fin section hebergement*/
+    /*fin Partie Hotel*/
+
+
+    /*section activité*/
+    #conteneur_activite{
+        flex-direction: column;
+    }
+
+    .titre_activite{
+        margin-top: 280px;
+    }
+
+    .card_act{
+        width: 570px;
+        height: 210px;
+        margin-bottom: 24px;
+        width: 100%;
+        height: 210px;
+        margin-bottom: 24px;
+    }
+
+    .img_activite{
+        width: 100%;
+        height: 165px;
+    }
+
+    .nom_act{
+        margin-left: 19px;
+        margin-top: 12px;
+    }
+    /*fin section activité*/
+    /*fin main*/
+
+    /*footer*/
+    #footer{
+        margin-left: 0px;
+        width: 100%;
+        border: 0px;
+    }
+
+    #conteneur_footer{
+        flex-direction: column;
+    }
+
+    .head_footer{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+    /*fin footer*/
+}
